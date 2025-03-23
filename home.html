@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - 首页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #e1ce75;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            height: 50px; /* 根据您的Logo大小调整 */
+        }
+        nav {
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a img {
+            height: 50px; /* 根据您的图标大小调整 */
+            width: auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        nav a:hover img {
+            border-color: #ff6347; /* 鼠标悬停时的边框颜色 */
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .icon-link {
+            text-decoration: none; /* 去掉链接的下划线 */
+            display: inline-block; /* 允许设置宽度和高度 */
+            vertical-align: top; /* 调整图片和文字的垂直对齐 */
+        }
+        .icon-link img {
+            display: block; /* 使图片成为块级元素，从而不会与文字在同一行 */
+            margin-bottom: 5px; 
+        }
+        .icon-link span {
+            display: block; 
+        }
+        
+        .toggle button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .slider {
+            position: relative;
+            max-width: 600px; /* 限制轮播图的最大宽度 */
+            height: 400px; /* 设置轮播图的高度 */
+            margin: 20px auto; /* 水平居中 */
+            overflow: hidden; /* 隐藏超出容器的图片部分 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+        }
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%; /* 确保轮播图的高度与容器一致 */
+        }
+        .slider-wrapper img {
+            width: 100%; /* 宽度填满容器 */
+            height: 100%; /* 高度填满容器 */
+            object-fit: cover; /* 保持图片比例 */
+        }
+        .slider-footer {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+        .slider-indicator {
+            list-style-type: none;
+            padding: 0;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .slider-indicator li {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .slider-indicator li.active {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/foodhub-logo.jpg" alt="FoodHub Logo">
+        <h1>FoodHub</h1>
+    </header>
+    <nav>
+        <a href="home.html" class="icon-link"><img src="images/home.jpg" alt="Home">
+            <span>Home</span>
+        </a> 
+        <a href="callus.html" class="icon-link"><img src="images/callus.jpg" alt="Call Us">
+            <span>Call Us</span>
+        </a> 
+        <a href="aboutus.html" class="icon-link"><img src="images/aboutus.jpg" alt="About Us">
+            <span>About Us</span>
+        </a> 
+        <a href="bestdeal.html" class="icon-link"><img src="images/bestdeal.jpg" alt="Best Deal">
+            <span>Best Deal</span>
+        </a> 
+        <a href="recipes.html" class="icon-link"><img src="images/recipes.jpg" alt="Recipes">
+            <span>Recipes</span>
+        </a> 
+        <a href="menu.html" class="icon-link"><img src="images/menu.jpg" alt="Menu">
+            <span>Menu</span>
+        </a> 
+        <a href="whatsnew.html" class="icon-link"><img src="images/whatsnew.jpg" alt="What's New">
+            <span>Whatsnew</span>
+        </a> 
+    </nav>
+    <div class="content">
+        <h2>关于FoodHub</h2>
+        <p>FoodHub is an emerging food business brand, dedicated to providing
+ customers with a variety of culinary services. Through our website, you can easily browse the menu and place orders.</p>
+        <h2>The delicacies we offer:</h2>
+    </div>
+    <div class="slider">
+        <div class="slider-wrapper">
+          <img src="./images/118.jpg" alt="" />
+        </div>
+        <div class="slider-footer">
+          <ul class="slider-indicator">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="toggle">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        const data = [
+          { url: './images/111.jpg'},
+          { url: './images/112.jpg'},
+          { url: './images/113.jpg'},
+          { url: './images/114.jpg'},
+          { url: './images/115.jpg'},
+          { url: './images/116.jpg'},
+          { url: './images/117.jpg'},
+          { url: './images/118.jpg'},
+        ]
+        const img = document.querySelector('.slider-wrapper img');
+        const p = document.querySelector('.slider-footer p');
+        const footer = document.querySelector('.slider-footer');
+        const next = document.querySelector('.next');
+        let i = 0;
+        next.addEventListener('click', function() {
+            i++;
+            if (i >= data.length) {
+                i = 0;
+            }
+            toggle();
+        });
+        const prev = document.querySelector('.prev');
+        prev.addEventListener('click', function() {
+            i--;
+            if (i < 0) {
+                i = data.length - 1;
+            }
+            toggle();
+        });
+        function toggle() {
+            img.src = data[i].url;
+            document.querySelector('.slider-indicator .active').classList.remove('active');
+            document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active');
+        }
+        let timerTd = setInterval(function() {
+            next.click();
+        }, 3000);
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', function() {
+            clearInterval(timerTd);
+        });
+        slider.addEventListener('mouseleave', function() {
+            timerTd = setInterval(function() {
+                next.click();
+            }, 3000);
+        });
+      </script>
+</body>
+</html>

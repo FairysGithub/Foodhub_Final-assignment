@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单 - Foodhub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e1ce75;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none; /* 移除默认的列表样式 */
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left; /* 或者 center，根据您的布局需求 */
+        }
+        ul li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        ul li::before {
+            content: "• "; /* 使用伪元素添加自定义列表标记 */
+            color: #ff6347;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        a {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            color: #ff6347;
+            text-decoration: none;
+            font-size: 1.0em;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: white; /* 鼠标悬停时改变颜色 */
+        }
+        header a {
+            color: white;
+            text-decoration: none; /* 去掉链接下划线 */
+            margin-left: 10px; /* 可选：增加一些左边距 */
+        }
+        /* 可选：为链接添加一个悬停效果 */
+        header a:hover {
+            text-decoration: underline;
+        }
+        header p {
+            margin: 0;
+            flex: 1; /* 使段落占据剩余空间 */
+            text-align: right; /* 将文本对齐到右侧 */
+        }
+        .header-left {
+            display: flex;
+            align-items: center; /* 垂直居中对齐 */
+        }
+        li img {
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 100px; /* 根据需要设置宽度 */
+            height: auto; /* 保持图片的原始宽高比 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="home.html">返回首页</a>
+            <p style=" font-size: 2.5em; text-indent: -70px;text-align: center;color: rgb(147, 231, 11);">菜单</p>
+        </div>
+    </header>
+    <p>以下是Foodhub提供的部分菜品：</p>
+    <ul>
+        <li>
+            <img src="images/01.jpg" alt="红烧排骨">
+            红烧排骨 - ￥29 <span style="color:gray;">(推荐)</span>
+        </li>
+        <li>
+            <img src="images/02.jpg" alt="麻婆豆腐">
+            麻婆豆腐 - ￥20 <span style="color:gray;">(素食)</span>
+        </li>
+        <li>
+            <img src="images/03.jpg" alt="红烧茄子">
+            红烧茄子 - ￥22 <span style="color:gray;">(素食)</span>
+        </li>
+        <li>
+            <img src="images/04.jpg" alt="红烧鱼">
+            红烧鱼 - ￥32 <span style="color:gray;">(荤食)</span>
+        </li>
+        <li>
+            <img src="images/05.jpg" alt="宫保鸡丁">
+            宫保鸡丁 - ￥23 <span style="color:gray;">(荤食)</span>
+        </li>
+    </ul>
+</body>
+</html>

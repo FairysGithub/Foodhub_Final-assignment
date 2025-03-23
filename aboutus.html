@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - Foodhub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-color: #e1ce75;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content p {
+            text-indent: 2em;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .team-member {
+            width: 30%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            margin-top: 0.5rem;
+        }
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        header a {
+            color: white;
+            text-decoration: none; /* 去掉链接下划线 */
+            margin-left: 10px; /* 可选：增加一些左边距 */
+        }
+        /* 可选：为链接添加一个悬停效果 */
+        header a:hover {
+            text-decoration: underline;
+        }
+        header p {
+            margin: 0;
+            flex: 1; /* 使段落占据剩余空间 */
+            text-align: right; /* 将文本对齐到右侧 */
+        }
+        .header-left {
+            display: flex;
+            align-items: center; /* 垂直居中对齐 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="home.html">返回首页</a>
+            <p style=" font-size: 2.5em; text-indent: -70px;text-align: center;color: rgb(147, 231, 11);">关于我们 - Foodhub</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <p>Foodhub 是一家新兴的食品企业，致力于为客户提供优质的餐饮服务。我们拥有丰富的菜品选择和出色的服务质量，致力于让每一位顾客都能享受到美味的食物和愉快的用餐体验。我们的团队由一群热爱美食、追求卓越的年轻人组成，他们用心挑选食材，精心烹饪每一道菜品，确保每一口都能触动您的味蕾。</p>
+            <img src="images/foodhub-logo.jpg" style="height: 50px;" alt="Foodhub 美食">
+            <h2>我们的团队</h2>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="images/team-member-1.jpg" alt="团队成员 1">
+                    <h3>张三</h3>
+                    <p>首席厨师</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member-2.jpg" alt="团队成员 2">
+                    <h3>李四</h3>
+                    <p>服务经理</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member-3.jpg" alt="团队成员 3">
+                    <h3>王五</h3>
+                    <p>市场总监</p>
+                </div>
+                <!-- 可以添加更多团队成员 -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Foodhub. 版权所有. <a href="home.html">返回首页</a></p>
+    </footer>
+</body>
+</html>

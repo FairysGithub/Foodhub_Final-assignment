@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最佳优惠 - Foodhub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            background-color: #e1ce75;
+        }
+        header {
+            /* background-color: #333;
+            color: white;
+            text-align: center;
+            padding:3px 0; */
+
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .home-link {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; /* 根据需要调整 */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .offer {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .offer:last-child {
+            border-bottom: none;
+        }
+        .offer h2 {
+            margin-top: 0;
+        }
+        .offer p {
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #29333a;
+        }
+        footer {
+            text-align: center;
+            padding: -100px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .header-title {
+        font-size: 2.5em;
+        text-align: center;
+        color: rgb(147, 231, 11);
+        margin-right: 450px; /* 根据需要调整 */
+    }
+        header a {
+            color: white;
+            text-decoration: none; /* 去掉链接下划线 */
+            margin-left:-1200px; /* 可选：增加一些左边距 */
+        }
+        /* 可选：为链接添加一个悬停效果 */
+        header a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="home.html" class="home-link">返回首页</a>
+            <p class="header-title" >最佳优惠 - Foodhub</p>
+        </div>
+    </header>
+    <div class="container">
+        <p>在这里，您可以找到Foodhub提供的最新和最优惠的菜品和活动。我们不断推出各种优惠，让您在享受美食的同时，也能节省更多的开支。</p>
+        <!-- 优惠信息开始 -->
+        <div class="offer">
+            <h2>优惠一：午市特惠</h2>
+            <p>每天12:00至14:00，所有菜品8折优惠。</p>
+            <a href="lunch-special.html" class="btn">了解更多</a>
+        </div>
+        <div class="offer">
+            <h2>优惠二：新用户注册礼</h2>
+            <p>新用户注册即送50元优惠券，可用于首次订单。</p>
+            <a href="register.html" class="btn">立即注册</a>
+        </div>
+        <div class="offer">
+            <h2>优惠三：生日惊喜</h2>
+            <p>在您的生日月，凭有效证件可享受一次免费招牌菜。</p>
+            <a href="birthday-offer.html" class="btn">查看详情</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Foodhub. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
